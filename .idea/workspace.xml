@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2f03259-1709-4ec5-a3fa-a9a23eb0e87e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/annotations/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/annotations/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/annotations/Popup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/annotations/Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/annotations/UrlTemplates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/AbsComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/CoursesTilesComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/EducationMenuComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/popups/AbsPopup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/popups/IPopup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/exceptions/BrowserNotSupportedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/exceptions/PathEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/factory/FactoryDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/factory/implement/ChromeWebDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/factory/implement/IDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/listeners/MouseListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pageobject/AbsPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/AbsBasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/CoursePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/support/UIGuiceScoped.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/waiters/Waiters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/checkstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/Runner_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/hooks/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CommonSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CoursePageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CoursesBlockSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/MainPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/otus/bdd/homework.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2TCK0O3HkcdNGhZiKHeaoG4PBtL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/SPB/Documents/GitHub/OTUS_PROF_Homework_2_Cucumber/src/main"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SPB\Documents\GitHub\OTUS_PROF_Homework_2_Cucumber\src\main" />
+      <recent name="C:\Users\SPB\Documents\GitHub\OTUS_PROF_Homework_2_Cucumber\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OTUS_PROF_Homework_2_Cucumber [clean...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+                <option value="-DforkCount=0" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2f03259-1709-4ec5-a3fa-a9a23eb0e87e" name="Changes" comment="" />
+      <created>1690541400576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690541400576</updated>
+    </task>
+    <servers />
+  </component>
+</project>
