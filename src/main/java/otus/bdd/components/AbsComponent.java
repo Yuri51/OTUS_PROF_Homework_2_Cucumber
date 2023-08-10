@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import otus.bdd.pageobject.AbsPageObject;
 import otus.bdd.support.UIGuiceScoped;
 
-public class AbsComponent<T> extends AbsPageObject<T> {
+public abstract class AbsComponent<T> extends AbsPageObject<T> {
 
   @Inject
   public AbsComponent(UIGuiceScoped scenarioScoped) {

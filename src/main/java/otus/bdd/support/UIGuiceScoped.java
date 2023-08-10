@@ -5,5 +5,5 @@ import org.openqa.selenium.WebDriver;
 
 @ScenarioScoped
 public class UIGuiceScoped {
-    public WebDriver driver;
+  public WebDriver driver;
 }

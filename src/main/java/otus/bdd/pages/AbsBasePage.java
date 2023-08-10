@@ -3,7 +3,6 @@ package otus.bdd.pages;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.inject.Inject;
-import otus.bdd.exceptions.PathEmptyException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import otus.bdd.pageobject.AbsPageObject;
@@ -19,7 +18,7 @@ public abstract class AbsBasePage<T> extends AbsPageObject<T> {
   }
 
   private static final String BASE_URL = System.getProperty("base.url");
-  @FindBy(css = "div>a[href='https://otus.ru/']")
+  @FindBy(xpath = "//h2[text()='Авторские онлайн‑курсы для профессионалов']")
   private WebElement header;
 
   public T pageHeaderShouldBeVisible() {

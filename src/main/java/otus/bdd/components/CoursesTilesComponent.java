@@ -1,23 +1,16 @@
 package otus.bdd.components;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.google.inject.Inject;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import otus.bdd.annotations.Component;
+import otus.bdd.support.UIGuiceScoped;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Month;
 import java.time.format.TextStyle;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-import java.util.function.BinaryOperator;
-import java.util.stream.Collectors;
-import otus.bdd.annotations.Component;
-import org.openqa.selenium.By;
-import otus.bdd.support.UIGuiceScoped;
-
+import java.util.*;
 
 @Component("id:Course_block")
 public class CoursesTilesComponent extends AbsComponent<CoursesTilesComponent> {
@@ -26,60 +19,43 @@ public class CoursesTilesComponent extends AbsComponent<CoursesTilesComponent> {
     super(scenarioScoped);
   }
 
-  private String coursesNamesInSectionSelector = "div>h5";
+  private String coursesNamesInSectionSelector = "//body//following::div[./h5][%d]";
   private String courseNameSelector = "div>picture>img[alt='%s']";
-  private String courseStartDateLocator = "//span[contains(text(), 'С ')]";
+  private String courseStartDateOneLocator = "//body//following::span[contains(text(), 'С ')][%d]";
+  private String courseStartDateTwoLocator = "//body//following::span[contains(text(), 'В ')][%d]";
   private String courseTrainingPeriodLocator = "//span[contains(text(), 'месяц')]";
+  private SimpleDateFormat simpleDateFormat = new SimpleDateFormat("d MMMM", Locale.forLanguageTag("ru"));
+  @FindBy(xpath = "//a[div/div/picture/img]")
+  private List<WebElement> courseTile;
 
   public List<WebElement> getCourseNames() {
-    return driver.findElements(By.cssSelector(coursesNamesInSectionSelector));
+    return List.copyOf(courseTile);
   }
 
   public void moveCourse(String title) {
     moveAndPerform(guiceScoped.driver.findElement(By.cssSelector(String.format(courseNameSelector, title))));
   }
 
-  public CoursesTilesComponent filterCoursesByTitle(String title) {
-    getCourseNames();
-    List<WebElement> collect = $$(coursesNamesInSectionSelector);
-    List<WebElement> actualCourse = collect.stream()
-        .filter(element -> element.getText().equals(title))
-        .collect(Collectors.toList());
-    assertThat(actualCourse)
-        .as("Course '%s' not found", title)
-        .hasSize(1);
-    return this;
-  }
-
-  private List<Date> getDataList() {
-    SimpleDateFormat format = new SimpleDateFormat("d MMMM", Locale.forLanguageTag("ru"));
-    List<Date> dataList = driver.findElements(By.xpath(String.format(courseStartDateLocator)))
-        .stream()
-        .map(element -> element.getText().replace("С ", ""))
-        .map(date -> {
-          try {
-            return format.parse(date);
-          } catch (ParseException e) {
-            throw new RuntimeException(e);
-          }
-        })
-        .collect(Collectors.toList());
-    return dataList;
-  }
-
-  public CoursesTilesComponent getEarlierLaterCourse(boolean isEarly) {
-    BinaryOperator<Date> selectDate = null;
-    if (isEarly) {
-      selectDate = (Date date1, Date date2) -> date1.before(date2) ? date1 : date2;
-    } else {
-      selectDate = (Date date1, Date date2) -> date1.after(date2) ? date1 : date2;
+  private Map<String, Date> getNameDataCourseList(List<WebElement> courseTile) {
+    Map<String, Date> foundCourse = new HashMap<>();
+    for (int i = 1; i < courseTile.size(); i++) {
+      String courseName = driver.findElement(By.xpath(String.format(coursesNamesInSectionSelector, i))).getText();
+      WebElement elements1 = driver.findElement(By.xpath(String.format(courseStartDateOneLocator, i)));
+      if (elements1 != null) {
+        Date date = parseDate(elements1.getText().replace("С ", ""));
+        foundCourse.put(courseName, date);
+      }
     }
-    Date earlyDate = getDataList()
-        .stream()
-        .reduce(selectDate)
-        .get();
-    clickCourseByDate(earlyDate);
-    return this;
+    return foundCourse;
+  }
+
+  private Date parseDate(String text) {
+    try {
+      return simpleDateFormat.parse(text);
+    } catch (ParseException e) {
+      e.printStackTrace();
+    }
+    return null;
   }
 
   public void clickCourseByDate(Date date) {
@@ -96,6 +72,22 @@ public class CoursesTilesComponent extends AbsComponent<CoursesTilesComponent> {
   private WebElement findElement(By by) {
     return driver.findElement(by);
   }
+
+  public void printCourseNameAndDate(String dateStart) throws ParseException {
+    List<WebElement> courseTile = getCourseNames();
+    Map<String, Date> courseNamesAndDates = getNameDataCourseList(courseTile);
+    Date date = parseDate(dateStart);
+    for (Map.Entry<String, Date> entry : courseNamesAndDates.entrySet()) {
+      if (entry.getValue().equals(date) || entry.getValue().after(date)) {
+        System.out.println("Название курса = " + entry.getKey() + "  Дата старта = " + simpleDateFormat.format(entry.getValue()));
+      }
+    }
+  }
 }
+
+
+
+
+
 
 

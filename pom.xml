@@ -111,29 +111,29 @@
           </systemPropertyVariables>
         </configuration>
       </plugin>
-      <!--            <plugin>-->
-      <!--                <groupId>org.apache.maven.plugins</groupId>-->
-      <!--                <artifactId>maven-checkstyle-plugin</artifactId>-->
-      <!--                <version>${checkstyle.plugin.version}</version>-->
-      <!--                <configuration>-->
-      <!--                    <includeTestSourceDirectory>true</includeTestSourceDirectory>-->
-      <!--                    <configLocation>${project.build.sourceDirectory}/../resources/checkstyle.xml</configLocation>-->
-      <!--                </configuration>-->
-      <!--                <executions>-->
-      <!--                    <execution>-->
-      <!--                        <id>analyze-compile</id>-->
-      <!--                        <phase>compile</phase>-->
-      <!--                        <goals>-->
-      <!--                            <goal>check</goal>-->
-      <!--                        </goals>-->
-      <!--                    </execution>-->
-      <!--                </executions>-->
-      <!--            </plugin>-->
-      <!--            <plugin>-->
-      <!--                <groupId>com.github.spotbugs</groupId>-->
-      <!--                <artifactId>spotbugs-maven-plugin</artifactId>-->
-      <!--                <version>${spotbugs.version}</version>-->
-      <!--            </plugin>-->
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-checkstyle-plugin</artifactId>
+                      <version>${checkstyle.plugin.version}</version>
+                      <configuration>
+                          <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                          <configLocation>${project.build.sourceDirectory}/../resources/checkstyle.xml</configLocation>
+                      </configuration>
+                      <executions>
+                          <execution>
+                              <id>analyze-compile</id>
+                              <phase>compile</phase>
+                              <goals>
+                                  <goal>check</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+                  <plugin>
+                      <groupId>com.github.spotbugs</groupId>
+                      <artifactId>spotbugs-maven-plugin</artifactId>
+                      <version>${spotbugs.version}</version>
+                  </plugin>
     </plugins>
   </build>
 </project>

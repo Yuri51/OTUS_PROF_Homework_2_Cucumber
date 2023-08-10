@@ -6,7 +6,7 @@ import otus.bdd.exceptions.PathEmptyException;
 import otus.bdd.pageobject.AbsPageObject;
 import otus.bdd.support.UIGuiceScoped;
 
-public class AbsPopup<T> extends AbsPageObject<T> implements IPopup<T> {
+public abstract class AbsPopup<T> extends AbsPageObject<T> implements IPopup<T> {
   @Inject
   public AbsPopup(UIGuiceScoped scenarioScoped) {
     super(scenarioScoped);

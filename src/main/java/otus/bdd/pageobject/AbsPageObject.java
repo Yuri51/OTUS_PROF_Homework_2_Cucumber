@@ -8,7 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import otus.bdd.support.UIGuiceScoped;
 import otus.bdd.waiters.Waiters;
-
 import java.util.List;
 
 public abstract class AbsPageObject<T> {

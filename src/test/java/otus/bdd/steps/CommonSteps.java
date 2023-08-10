@@ -8,13 +8,13 @@ import otus.bdd.support.UIGuiceScoped;
 
 public class CommonSteps {
 
-    @Inject
-    private FactoryDriver factoryDriver;
-    @Inject
-    private UIGuiceScoped guiceScoped;
+  @Inject
+  private FactoryDriver factoryDriver;
+  @Inject
+  private UIGuiceScoped guiceScoped;
 
-    @Пусть("Открыт браузер {string}")
-    public void openBrowser(String browserName ) throws BrowserNotSupportedException {
-        guiceScoped.driver = factoryDriver.getDriver(browserName);
-    }
+  @Пусть("Открыт браузер {string}")
+  public void openBrowser(String browserName) throws BrowserNotSupportedException {
+    guiceScoped.driver = factoryDriver.getDriver(browserName);
+  }
 }

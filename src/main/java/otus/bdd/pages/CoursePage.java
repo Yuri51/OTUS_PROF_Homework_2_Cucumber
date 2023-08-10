@@ -19,10 +19,6 @@ public class CoursePage extends AbsBasePage<CoursePage> {
 
   public void coursePageIsOpened(String title) {
     Assertions.assertEquals((guiceScoped.driver.findElement(By.xpath(String.format(courseNameHeaderLocator, title))).getText()), title);
-//    assertThat(guiceScoped.driver.findElement(By.xpath(String.format(courseNameHeaderLocator, title))).getText(),title);
-//        .as("Course name is not visible")
-//        .isVisible();
-//    return this;
   }
 }
 
