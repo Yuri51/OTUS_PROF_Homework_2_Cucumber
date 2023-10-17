@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f03259-1709-4ec5-a3fa-a9a23eb0e87e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/PreparingCoursePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/PreparingCoursePageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/components/AbsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/AbsComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/components/CoursesTilesComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/CoursesTilesComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/components/popups/AbsPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/components/popups/AbsPopup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/factory/implement/ChromeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/factory/implement/ChromeWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/pageobject/AbsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pageobject/AbsPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/AbsBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/AbsBasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/CoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/pages/CoursePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/support/UIGuiceScoped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/support/UIGuiceScoped.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/otus/bdd/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CommonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CommonSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CoursePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CoursePageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CoursesBlockSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/CoursesBlockSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/MainPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/otus/bdd/steps/MainPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/otus/bdd/homework.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/otus/bdd/homework.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/otus/bdd/waiters/Waiters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/otus/bdd/waiters/Waiters.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +31,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SPB/Documents/GitHub/OTUS_PROF_Homework_1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/SPB/Documents/GitHub/OTUS_PROF_Homework_2_Cucumber/jenkins",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SPB\Documents\GitHub\OTUS_PROF_Homework_2_Cucumber\jenkins" />
       <recent name="C:\Users\SPB\Documents\GitHub\OTUS_PROF_Homework_2_Cucumber\src\main" />
       <recent name="C:\Users\SPB\Documents\GitHub\OTUS_PROF_Homework_2_Cucumber\src" />
     </key>
