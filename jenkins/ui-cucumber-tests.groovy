@@ -12,7 +12,7 @@ timeout(180) {
             }
             stage('Run tests') {
                 tests_exit_code = sh(
-                        script: "mvn test -DbaseUrl=$BASE_URL -Dbrowser=$BROWSER" -Dbrowser.version=${BROWSER_VERSION},
+                        script: "mvn test -DbaseUrl=$BASE_URL -Dbrowser=$BROWSER -Dbrowser.version=${BROWSER_VERSION}",
                         returnStatus: true,
                 )
                 if (tests_exit_code != 0) {
@@ -25,7 +25,7 @@ timeout(180) {
 //                        jdk              : '',
 //                        properties       : [],
 //                        reportBuildPolicy: 'ALWAYS',
-//                        results          : [[path: 'build/reports/allure-results']]
+//                        results          : [[path: '/allure-results']]
 //                ])
 //            }
         }
