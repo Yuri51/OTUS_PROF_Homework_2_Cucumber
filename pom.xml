@@ -25,6 +25,7 @@
 
     <browser>chrome</browser>
     <base.url>https://otus.ru/</base.url>
+    <browser.version>114.0</browser.version>
   </properties>
 
   <dependencies>
@@ -109,6 +110,7 @@
           <systemPropertyVariables>
             <browser>${browser}</browser>
             <base.url>${base.url}</base.url>
+            <browser.version>${browser.version}</browser.version>
           </systemPropertyVariables>
         </configuration>
       </plugin>
